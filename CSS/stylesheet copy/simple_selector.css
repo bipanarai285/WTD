@@ -1,0 +1,12 @@
+* {
+    color: blue;
+}
+
+p.center {
+    text-decoration: underline dotted red;
+}
+
+h3, h5, p {
+    background-color: yellowgreen;
+
+}
