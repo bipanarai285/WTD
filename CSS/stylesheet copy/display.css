@@ -1,0 +1,29 @@
+p {
+    background-color: brown;
+    padding: 30px 0px;
+
+  }
+  
+  span {
+      background-color: burlywood;
+      padding: 20px;
+  }
+
+#none {
+    display: none;
+  }
+
+#inline_block {
+    display: inline-block;
+}
+
+a {
+    background-color: blueviolet;
+    padding: 20px;
+    text-align: center;
+    display: block;
+}
+
+#flex{
+    display: flex;
+}
