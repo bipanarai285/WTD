@@ -1,0 +1,22 @@
+*{box-sizing: border-box;}
+
+#div1 {
+    float: none;
+    background-color: blue;
+    height: 50px;
+}
+#div2 {
+    background-color: pink;
+    float: left;
+    height: 300px;
+    width: 30%;
+    padding: 100px;
+   
+}
+#div3 {
+    background-color: lightseagreen;
+    float: right;
+    height: 300px;
+    width: 70%;
+   
+}

@@ -1,0 +1,14 @@
+img{
+    height: 100px;
+    width: 100px;
+    float: right;
+    
+}
+#div1 {
+    background-color: brown;
+    float: right;
+}
+#div2 {
+    background-color: blue;
+    clear: left;
+}
