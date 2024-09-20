@@ -1,0 +1,11 @@
+.flex-container{
+    background-color :lightskyblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container > div {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
