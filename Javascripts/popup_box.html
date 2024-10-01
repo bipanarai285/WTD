@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>popup_box</title>
+    </head>
+    <body>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        <button onclick="promptBox()">Try this too</button>
+        <p id="demo2"></p>
+        
+        <script>
+            function myFunction() {
+                var txt;
+                if (confirm("Press a button!")) {
+                    txt = "You pressed OK!";
+                } else {
+                    txt = "You pressed Cancel!";
+                }
+                document.getElementById("demo").innerHTML = txt;
+
+            }
+            function promptBox() {
+                let text;
+                let person = prompt("Please enter your name:", "Bipana");
+                if (person == null || person == "") {
+                    text = "User.cancelled the prompt.";
+
+                } else {
+                    text = "Hello" + person + "! How are you today?";
+                }
+                document.getElementById("demo2").innerHTML = text;
+            }
+            
+
+        </script>
+        
+    </body>
+</html>
