@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scores</title>
+    <link rel="stylesheet" href="lab_excercise.css">
+    
+</head>
+<body>
+
+    <h2 style="text-align: center;">Student Scores</h2>
+    <p id="Scoreslist"></p>
+
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here using JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        // Create the student object
+        const students = {
+            Sonam: 76,
+            Pema: 61,
+            Sangay: 50,
+            Dechen: 55,
+            Lhaki: 92,
+            Karma: null,
+            Yuden: 81
+        };
+
+        // Get reference to the table body
+        const tableBody = document.querySelector("#studentTable tbody");
+
+        // Loop through the students object and create table rows
+        for (const [name, score] of Object.entries(students)) {
+            const row = document.createElement("tr");
+
+            // Create a cell for the student's name
+            const nameCell = document.createElement("td");
+            nameCell.textContent = name;
+            row.appendChild(nameCell);
+
+            // Create a cell for the student's score
+            const scoreCell = document.createElement("td");
+            scoreCell.textContent = score !== null ? score : 'N/A'; // Handle null score as 'N/A'
+            row.appendChild(scoreCell);
+
+            // Append the row to the table body
+            tableBody.appendChild(row);
+        }
+        function processScores(studentObj) {
+            const scorelist = document.getElementById('scorelist');
+            scorelist.innerHTML = '';
+            for (const student in studentObj){
+                const score = studentObj[student];
+                const listItem = document.createElement('li');
+                if (score === null){
+                    listItem.textContent = "{student}: No score avaialble"; 
+                } else {
+                    listItem.textContent = "{student}: {score} ";
+
+                }
+                scorelist.appendChild(listItem);
+            }
+        }
+        processScores(students);
+    </script>
+
+</body>
+</html>
