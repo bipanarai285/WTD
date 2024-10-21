@@ -1,0 +1,19 @@
+table {
+    width: 50%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    
+}
+table, th, td {
+    border: 1px solid black;
+   
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+thead th {
+    color: white; /* Text color */
+    background-color: rgb(69, 69, 151); /* Background color for heading */
+    padding: 10px;
+}
