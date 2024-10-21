@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Multiplication Table</title>
+        <link rel="stylesheet" href="/Bootstap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container text-center p-5 mt-5 bg-warning">
+            <h2 class="mb-5">Multiplication Table</h2>
+            <p>Click the buton below to generate a multiplication table</p>
+            <button class="btn border btn-outline-dark"onclick="multiply0">Click Me</button>
+            <h5 id="heading" class="my-5"></h5>
+            <p id="p1" class="p-5 m-5 bg-dark text-light"></p>
+
+        </div>
+        <script>
+            function multiply(){
+                let num = prompt("Enetr a number"):
+
+                if (isNan(num) || num == null){
+
+                }else{
+                    document.getElementById("headin").innerHTML = "Multiplication table of " + num;
+                    let result = "";
+                    for (let i = 1; i <=10; i++){
+                        result += num + " * " + i + "="+ (num * i) + "<br>";
+
+                    }
+                    document.getElementById('p1').innerHTML = result;
+                
+                }
+            }
+        </script>
+        
+        
+    </body>
+</html>
