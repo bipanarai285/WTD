@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div id="output">Hello world</div>
+    <button onclick="askMe(1)">Name</button>
+    <button onclick="askMe(2)">Who</button>
+    <script>
+    /*
+        myOutput("blank", "no question was asked");
+        var b = "hello world";
+    */
+        
+
+        function myOutput(a, q) {
+            console.log(b);
+            document.getElementById("output").innerHTML = q + " your response " + a;
+        }
+
+        function askMe(q) {
+            var question;
+            if(q==1){ 
+                    question = "First Question";
+                }
+                else if(q==2){
+                    question = "Second Question";
+                }
+                else{
+                    question = "Was not 1 so here is another question.";
+                }
+
+            document.getElementById("output").innerHTML = question;
+            //myOutput(q, question);
+        }
+
+        function oddEven(a) {
+            if (typeof a != "number") {
+                return false;
+            }
+            return a % 2;
+        }
+        var myFun = function () {
+            console.log('Say hello');
+        }
+    </script>
+</body>
+
+</html>

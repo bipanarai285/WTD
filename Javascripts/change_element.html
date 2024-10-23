@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>change_element</title>
+        <link rel="stylesheet" href="/Bootstap/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1 id="heading" style="color: blue;">Heading</h1>
+            <p id="para">This is a paragraph</p>
+            <a  id="link" href ="https://www.facebook.com">Facebook</a><br><br><br>
+            <button class="btn btn-primary" onclick="changeElements()">Click here</button>
+
+        </div>
+        <script>
+            function changeElements(){
+                var x = document.getElementById('heading');
+                var y = document.getElementById('para');
+                var z = document.getElementById('link');
+
+                x.style.color = "red";
+                y.innerHTML = "This paragraph has been updated";
+                z.innerHTML = "Youtube";
+                z.href = "www.youtube.com";
+            }
+        </script>
+        
+    </body>
+</html>
