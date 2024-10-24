@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>excercise</title>
+</head>
+<body>
+    <div id="myDiv">
+        <h5>Exercise</h5>
+        <h5 class="heading">Remove me</h5>
+        <p id="para">Add a new paragraph and link inside that paragraph!</p>
+    </div>
+
+    <button onclick="addNewParagraph()">add a paragraph</button>
+
+    <script>
+        function addNewParagraph() {
+            let parentDiv = document.getElementById("myDiv");
+            
+            // Remove the <h5> element with the class 'heading'
+            let heading = document.getElementsByClassName("heading")[0];// First element
+            parentDiv.removeChild(heading);
+            
+
+            // Create a new paragraph element
+            let newParagraph = document.createElement("p");
+            newParagraph.textContent = "click on the following link to visit jnec website: ";
+            newParagraph.style.color = "red";
+
+            // Create a new anchor (link) element
+            let link = document.createElement("a");
+            link.href = "https://www.jnec.edu.bt/en/";
+            link.textContent = "link";
+            link.style.color = "blue"; 
+
+            // Append the link to the new paragraph
+            newParagraph.appendChild(link);
+
+            // Replace the old paragraph with the new one
+            let oldParagraph = document.getElementById("para");
+            parentDiv.replaceChild(newParagraph, oldParagraph);
+        }
+    </script>
+</body>
+</html>
