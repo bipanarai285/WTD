@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inline_mouse_event</title>
+    </head>
+    <body>
+        <button onclick="alert('button was clicked')">click me</button><br><br>
+        <button onclick="this.style.backgroundColor='red'">Double click me</button><br><br>
+        <button onmouseover="this.style.color='blue'">Hover over me!</button><br><br>
+        <button onmouseout="this.style.backgroundColor='pink'">Move away!</button><br><br>
+        <button onmousedown="this.style.textAlign='center'">Press the mouse!</button><br><br>
+        <button onmouseup="this.style.fontWeight='bold'">Release the mouse!</button><br><br>
+        <div onmousemove="this.style.fontStyle='italic'; this.style.color='red'">Move the mouse here!</div><br>
+        <input type="text" placeholder="username" onkeydown="this.style.backgroundColor='red'"><br><br>
+        <input type="password" placeholder="password" onkeyup="this.style.backgroundColor='green'"><br><br>
+
+        
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Event listener method</title>
+    </head>
+    <body>
+        <button id="MyButton">click me</button>
+        <script>
+            const button = document.getElementById('MyButton');
+            button.addEventListener('click', function(){
+                alert('First event listener!');
+            });
+
+            button.addEventListener('click', function(){
+                button.style.background = "blue";
+                button.style.color = "white";
+            });
+            button.addEventListener('load', function(){
+                alert('page is reloaded');
+            })
+
+            
+        </script>
+        
+    </body>
+</html>
